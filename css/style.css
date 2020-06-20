@@ -90,11 +90,11 @@ img {
   top: 0px;
   padding: 0 30px;
   transition: 1s ease-in;
-  background: #000;
 }
 
 .navbar.top {
   background: transparent;
+  background-color: #333;
 }
 
 .navbar a {
@@ -209,4 +209,27 @@ img {
 
 .footer .social>* {
   margin-right: 30px;
+}
+
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
